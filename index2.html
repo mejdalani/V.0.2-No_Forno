@@ -7,6 +7,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="bootstrap.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script>
+			function expandir(id) {
+				$('.menu').hide();
+				$('#menu' + id).show();
+			}
+		</script>
 		
 	</head>
 	
@@ -28,9 +34,9 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-						  <li><a data-toggle="collapse" href="#prodmenu" aria-expanded="false" aria-controls="expmenu">Produção</a></li>
-						  <li><a data-toggle="collapse" href="#bolsmenu" aria-expanded="false" aria-controls="expmenu">Bolsistas</a></li>
-						  <li><a data-toggle="collapse" href="#boosmenu" aria-expanded="false" aria-controls="expmenu">Boosters</a></li>
+						  <li><a data-toggle="collapse" href="#prodmenu" onclick="javascript:expandir(1);" aria-expanded="false" aria-controls="expmenu">Produção</a></li>
+						  <li><a data-toggle="collapse" href="#bolsmenu" onclick="javascript:expandir(2);" aria-expanded="false" aria-controls="expmenu">Bolsistas</a></li>
+						  <li><a data-toggle="collapse" href="#boosmenu" onclick="javascript:expandir(3);" aria-expanded="false" aria-controls="expmenu">Boosters</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 						  <li class="active"><a href="./">Configurações <span class="sr-only">(current)</span></a></li>
@@ -47,8 +53,8 @@
 							
 			</div>
 			
-			<div id= "expmenu" class="collapse in"> <!--MENUS EXPANDIDOS-->
-			<div id="prodmenu" class="panel-collapse collapse"> <!--MENU DE PRODUÇÃO-->
+			<div id= "menu3" class="collapse in menu"> <!--MENUS EXPANDIDOS-->
+			<div id="menu1" class="panel-collapse collapse menu"> <!--MENU DE PRODUÇÃO-->
 				<div class="openbar">
 					<div class="container">
 						<div class="row">
@@ -140,7 +146,7 @@
 				</div>
 			</div>	
 						
-			<div id="bolsmenu" class="panel-collapse collapse"> <!--MENU DE BOLSISTAS-->
+			<div id="menu2" class="panel-collapse collapse menu"> <!--MENU DE BOLSISTAS-->
 				<div class="openbar">
 					<div class="container">
 						<div class="row">
