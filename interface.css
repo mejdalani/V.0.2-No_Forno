@@ -1,0 +1,44 @@
+body{
+	background-color: #ffffff;
+}
+
+.bg {
+  padding:50px 50px 50px 50px;
+  margin:30px;
+  border:solid #dddddd 1px;
+  border-radius:5px;
+  text-align:center;
+  
+}
+
+.EstBar{
+	padding: 10px 10px 10px 10px;
+	border: solid #cccccc 1px;
+	border-radius: 5px;
+}
+
+.openbar{
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+	border: solid #cccccc 1px;
+	border-radius: 5px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+
+.title {
+	padding: 30px 30px 30px 30px;
+	border: transparent 1px;
+	border-radius: 5px;
+	text-align: center;
+	font-family: "Lucida Console";
+	font-size: 40;
+	color: #484549;	
+}
+
+.btn-success, .btn-danger {
+  width:200px;
+}

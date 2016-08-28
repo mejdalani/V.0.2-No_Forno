@@ -6,6 +6,8 @@
 	var prod3 = 0;
 	var prod4 = 0;
 	var prod5 = 0;
+	var prod6 = 0;
+	var prod7 = 0;
 	var prodclick = 0;
 	var prodtime;
 	var cooldown = 1000;
@@ -50,7 +52,7 @@
 					prod1 = prod1 + number;
 					document.getElementById('prod1').innerHTML = prod1;
 				}, cooldown);
-			document.getElementById('prodclick1').innerHTML = prodclick;
+			document.getElementById('prodclick').innerHTML = prodclick;
 		}
 	
 	// 	PRODUZIR PÁGINA
@@ -481,14 +483,35 @@ window.setInterval(function(){
 	prod3 = prod3 + bol3 + (100*bol6 + 100*bol7)*(ef2+ef3);	
 	prod4 = prod4 + bol4 + (10*bol6 + 10*bol7)*(ef2+ef3);
 	prod5 = prod5 + bol7*ef3;
-	prod6 = prod6; 
-	prod7 = prod7;
+	
+	var prod = prod1 + prod2 + prod3 + prod4 + prod5 + prod6 + prod7;
+	var bol = bol1 + bol2 + bol3 + bol5 + bol6 + bol7;
+	
+	var prod1v = (bol1 + 10000*bol7)*(ef1+ef3) + 1000/cooldown;
 	
 	document.getElementById('prod1').innerHTML = prod1;
 	document.getElementById('prod2').innerHTML = prod2;
+	document.getElementById('prod3').innerHTML = prod3;
+	document.getElementById('prod4').innerHTML = prod4;
+	document.getElementById('prod5').innerHTML = prod5;
+	document.getElementById('prod6').innerHTML = prod6;
+	document.getElementById('prod7').innerHTML = prod7;
+	document.getElementById('prod').innerHTML = prod;
+	
+	document.getElementById('bol1').innerHTML = bol1;
+	document.getElementById('bol2').innerHTML = bol2;
+	document.getElementById('bol3').innerHTML = bol3;
+	document.getElementById('bol4').innerHTML = bol4;
+	document.getElementById('bol5').innerHTML = bol5;
+	document.getElementById('bol6').innerHTML = bol6;
+	document.getElementById('bol7').innerHTML = bol7;
+	
+	document.getElementById('prod1v').innerHTML = prod1v;
+	
 	
 	document.getElementById('cooldown').innerHTML = cooldown;
 	
+		
 }, 1000);
 
 
